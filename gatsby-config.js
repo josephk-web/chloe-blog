@@ -6,5 +6,26 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: "Chloe Adams | Blog",
+    description: "Welcome to my life",
+  },
+  plugins:[
+{
+      resolve: `gatsby-source-filesystem`, 
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
+    
 }
