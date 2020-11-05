@@ -13,19 +13,28 @@ export default function Blog({ data }) {
     <NavBar />
 
       <div className="container">
-      <h1>My blog posts</h1>
+      <h1 className="mb-5 mt-5">Blog posts</h1>
 
-      {posts.map(post => (
-        <article key={post.id}>
-          <Link to={post.fields.slug}>
-            <h2>{post.frontmatter.title}</h2>
-          </Link>
-          <small>
+      <div className="flex-wrap card-columns">
+              {posts.map(post => (
+        <article className="card mb-5" key={post.id}>
+          <img src={post.frontmatter.image} className="card-img-top" alt="post-img"></img>
+          <div className="card-body">
+          
+            <h3 className="card-title">{post.frontmatter.title}</h3>
+             
+          <small className="card-text">
             {post.frontmatter.author}, {post.frontmatter.date}
           </small>
           <p>{post.excerpt}</p>
+          <Link className="btn btn-dark" to={post.fields.slug}>Read more</Link>
+          </div>
+         
         </article>
       ))}
+      </div>
+
+
     </div>   
       </div>
   )
@@ -42,6 +51,7 @@ export const pageQuery = graphql`
           date(fromNow: true)
           title
           author
+          image
         }
         excerpt
         id

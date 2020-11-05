@@ -1,5 +1,30 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .hero {
+    background-image: url(../images/sunset.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 50vh;
+}
+
+nav {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #FFFFFF;
+}
+
+nav ul li a{
+    color: #3D393A !important;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #3D393A;
 }
 
 .chloe-img {
