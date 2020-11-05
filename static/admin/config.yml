@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: chloe-blog
   branch: master
   media_folder: "images/uploads"
   media_library: "images/upload"
