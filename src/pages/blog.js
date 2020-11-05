@@ -48,7 +48,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date
+          date(fromNow: true)
           title
           author
           image
