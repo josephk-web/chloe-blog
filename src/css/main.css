@@ -34,3 +34,7 @@ nav ul li a{
 .card {
     width: 18rem;
 }
+
+.blog-post-img {
+    width: 50%;
+}

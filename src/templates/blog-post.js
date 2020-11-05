@@ -14,7 +14,8 @@ export default function BlogPost({ data }) {
       <Navbar />
 
       <div className="container">
-      <h1>{post.frontmatter.title}</h1>
+      <h1 className="mb-4">{post.frontmatter.title}</h1>
+      <img src={post.frontmatter.image} className="card-img-top mb-4 blog-post-img" alt="post-img"></img>
       <small>{post.frontmatter.date}</small>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
@@ -29,6 +30,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        image
       }
     }
   }
