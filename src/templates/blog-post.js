@@ -14,8 +14,8 @@ export default function BlogPost({ data }) {
       <Navbar />
 
       <div className="container">
-      <h1 className="mb-4">{post.frontmatter.title}</h1>
-      <img src={post.frontmatter.image} className="card-img-top mb-4 blog-post-img" alt="post-img"></img>
+      <h1 className="mb-4 mt-5">{post.frontmatter.title}</h1>
+      <img src={post.frontmatter.image} className=" mb-4" alt="post-img"></img>
       <small>{post.frontmatter.date}</small>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>

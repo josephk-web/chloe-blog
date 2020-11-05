@@ -17,9 +17,9 @@ export default function Blog({ data }) {
 
       <div className="flex-wrap card-columns">
               {posts.map(post => (
-        <article className="card mb-5" key={post.id}>
+        <article className="card border-0 mb-5" key={post.id}>
           <img src={post.frontmatter.image} className="card-img-top" alt="post-img"></img>
-          <div className="card-body">
+          <div className="card-body pl-0">
           
             <h3 className="card-title">{post.frontmatter.title}</h3>
              

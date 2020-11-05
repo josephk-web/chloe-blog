@@ -28,9 +28,5 @@ export const pageQuery = graphql`
         description
       }
     }
-
-    image: file(base: { eq: "chloeadams.jpg" }) {
-      publicURL
-    }
   }
   `
