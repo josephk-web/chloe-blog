@@ -1,8 +1,10 @@
 backend:
   name: git-gateway
+  repo: josephk-web/chloe-blog
   branch: master
-  media_folder: "images/uploads"
-  media_library: "images/upload"
+
+  media_folder: "/images/uploads"
+  media_library:  name:uploads
 
   collections:
   - name: "blog"
