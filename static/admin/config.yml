@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: static/images/uploads
-public_folder: admin/images/upload
+public_folder: /images/uploads
 
 collections: 
   - name: "blog"
